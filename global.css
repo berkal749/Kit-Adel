@@ -1,4 +1,15 @@
-:root {
+
+ @font-face {
+    font-family: 'KitSans';
+    /* Replace the filename below with your exact woff2 filename for 'Medium' */
+    src: url('fonts/92daa4d0098aa288-s.p.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+ 
+ 
+ :root {
+
   --font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -7,4 +18,5 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
+
