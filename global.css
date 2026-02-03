@@ -1,5 +1,5 @@
-/* :root {
-  --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+:root {
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 body {
@@ -7,4 +7,4 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+}
