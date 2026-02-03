@@ -10,13 +10,6 @@ loadSection("alaa", "sections/alaa.html");
 loadSection("adbo", "sections/adbo.html");
 loadSection("achref", "sections/achref.html");
 
-
-
-
-
-
-
-
 const icons = [
 `<svg viewBox="0 0 24 24" fill="none" stroke="#44B1FF" stroke-width="2">
   <rect x="3" y="4" width="18" height="14" rx="2"/>

@@ -12,26 +12,26 @@ body {
 } */
 
 
-section {
-        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+.features{
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     width: 100%;
     padding: 60px 20px;
     background-color: #F2EFE9;
 }
 
 
-.content {
+.features-content{
     max-width: 1100px;
     margin: 128px 200px;
     text-align: center;
 }
 
-.header{
+.features-content-header{
     max-width: 1100px;
     padding: 0 10px;
 }
 
-.text h2 {
+.features-content-header-text h2 {
     padding: 0 20px;
     font-size: 50px;
     font-weight: 1000;
@@ -42,7 +42,7 @@ section {
 }
 
 
-.header-bot {
+.features-content-header-text-bot{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,7 @@ section {
 }
 
 
-.header-bot-but {
+.features-header-bot-but{
     display: inline-block;
     padding: 14px 16px;
     border-radius: 15px;
@@ -68,7 +68,7 @@ section {
 }
 
 
-.footer-text {
+.features-header-text {
     font-size: 12px;
     color: #555;
 }
