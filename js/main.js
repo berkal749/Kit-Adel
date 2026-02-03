@@ -8,6 +8,7 @@ loadSection("tark", "sections/tark.html");
 loadSection("houssem", "sections/houssem.html");
 loadSection("alaa", "sections/alaa.html");
 loadSection("adbo", "sections/adbo.html");
+loadSection("jamal", "sections/jamal.html");
 loadSection("achref", "sections/achref.html");
 
 const icons = [
