@@ -31,25 +31,30 @@ padding-top: 80px;
    justify-content: space-between;
   width: 100%;
    height:  247.98px;
-   border-width: 5px;
-   border-color:  red;
-
-   border-style: solid;
+   margin-bottom: 30px;
 
 
 }
 .rightup{
  margin:0;
-  border-width: 5px;
-   border-color:  blueviolet;
-   border-style: solid;
-   width: 50%;
+ 
+
+   width: 53%;
+   margin-right: 10px;
 
 
 }
 p{
-    text-align: justify;
+    text-align: left;
     line-height: 24px;
+    text-justify: inter-word;
+    width: 95%;
+
+
+   
+
+    line-height: 1.6; 
+    margin-bottom: 20px;
 }
 
 
