@@ -98,6 +98,18 @@
     font-size: 2rem;
     text-align: center;
 } 
+@media (max-width: 768px) {
+
+    .features-content-header-text h2{
+        font-size: 32px;
+    }
+
+    .features{
+        padding: 40px 0;
+    }
+
+}
+
 
 
 

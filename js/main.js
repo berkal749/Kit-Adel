@@ -70,12 +70,20 @@ const icons = [
 </svg>`
 ];
 
-let h6SectionAbdo = ["Email marketing","Newsletters","Visual Automations","Forms & opt-ins","Segmentation & Tagging","Landing Pages","Recommendations","Kit App Store",
+const h6SectionAbdo = ["Email marketing","Newsletters","Visual Automations","Forms & opt-ins","Segmentation & Tagging","Landing Pages","Recommendations","Kit App Store",
   "Analytics & Insights","Email A/B testing","Sponsorships & Kit Ads","Commerce"];
-let pSectionAbdo = ["Reach your audience with personalized, engaging emails.", "Write and design newsletters that build loyal fans.","Build email sequences and workflows with drag-and-drop simplicity.","Capture subscribers with customizable opt-in forms.",
+const pSectionAbdo = ["Reach your audience with personalized, engaging emails.", "Write and design newsletters that build loyal fans.","Build email sequences and workflows with drag-and-drop simplicity.","Capture subscribers with customizable opt-in forms.",
   "Organize subscribers for targeted, relevant messaging.","Build beautiful customized website pages that convert.","Grow subscribers by cross-promoting with other creators.","Connect all your tools so everything works together seamlessly.","Track growth with actionable audience insights.","Optimize email conversions with data-driven split testing.","Monetize your newsletter with premium brand partnerships."
   ,"Sell digital products, memberships, and subscriptions directly through Kit."
 ];
+
+
+const grid = document.getElementById("featuresGrid");
+
+
+
+
+
 
 
 
