@@ -1,0 +1,133 @@
+.page{
+margin:0;
+
+
+}
+
+
+body{
+
+
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+
+}
+
+
+
+.pagefive{
+  
+width:100%;
+height: 100%;
+background-color: #f2efe9 ;
+padding-top: 80px;
+
+
+
+}
+
+.up{
+   display: flex;
+   justify-content: space-between;
+  width: 100%;
+   height:  247.98px;
+   border-width: 5px;
+   border-color:  red;
+
+   border-style: solid;
+
+
+}
+.rightup{
+ margin:0;
+  border-width: 5px;
+   border-color:  blueviolet;
+   border-style: solid;
+   width: 50%;
+
+
+}
+p{
+    text-align: justify;
+    line-height: 24px;
+}
+
+
+.leftup{
+   width: 40%;
+    font-size: 50px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column ;
+    gap: 10px;
+    margin-left: 20px;
+    
+
+    
+
+}
+.leftdown{
+    width:50%;
+
+
+
+}
+
+button{
+
+background-color: #45b1ff;
+
+width: 145px;
+padding: 16px 16px 16px 16px;
+font-size: medium;
+font-weight: 600;
+border-style:none ;
+border-radius: 10px;
+text-align: center;
+margin-top: 25px;
+margin-bottom: 3px;
+
+}
+.pe{
+
+    font-size: 11px;
+    font-weight: lighter;
+    
+}
+
+.down{
+
+  width: 100%;
+   height: 90%;
+   border-width: 5px;
+   border-color:  blueviolet;
+   border-style: solid;
+
+
+}
+
+
+.downup{
+
+ width: 100%;
+   height: 568px;
+   border-width: 5px;
+   border-color:  aqua;
+   border-style: solid;
+
+
+
+
+}
+
+.downdown{
+
+    width: 100%;
+   height: 1282.17px ;
+   border-width: 5px;
+   border-color: aqua;
+   border-style: solid;
+
+
+
+}
