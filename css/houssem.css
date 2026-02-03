@@ -1,0 +1,54 @@
+.h-title {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.h-carousel {
+  height: 200px;
+  width: 100vw;
+  background: #007bff;
+  margin-bottom: 120px;
+}
+
+.h-highlight {
+  color: #007bff;
+}
+.h-text {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #666666;
+  margin-bottom: 15px;
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.h-cta-container {
+  margin: auto;
+  width: fit-content;
+}
+
+.h-cta {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 14px;
+}
+
+.h-note {
+  display: block;
+  font-size: 0.9em;
+  color: #999999;
+  text-align: center;
+}
