@@ -4,7 +4,13 @@
 }
 
 
+.mil{
 
+   font-size: 80px;
+ font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 900;
+
+}
 
 .pagefive {
   width: 100%;
@@ -103,6 +109,17 @@ button {
     background-size: cover;
     border-radius: 12px;
 }
+
+.pic2{
+
+    display: flex;
+
+    flex-direction: column;
+      justify-content:space-around;
+    background-color: #1f1f1f;
+
+     border-radius: 12px;
+}
 .pic4{
     
     background-image: url(https://media.kit.com/images/pages/home/end-section/anne-laure-le-cunff_austin-church.jpg?q=75&fm=webp&auto=format&w=768&h=1150);
@@ -111,6 +128,14 @@ button {
     border-radius: 12px;
 
 
+
+}
+.pic3{
+
+     background-image: url(https://media.kit.com/images/pages/home/end-section/doc-williams.jpg?q=75&fm=webp&auto=format&w=808&h=798);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    border-radius: 12px;
 
 }
 
