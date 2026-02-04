@@ -103,6 +103,15 @@ button {
 .pe {
   font-size: 11px;
   font-weight: 100;
+  
+}
+.pe2 {
+  font-size: 11px;
+  font-weight: 100;
+  color: #f2efe9;
+  margin-top:  10px ;
+  
+  
 }
 
 .down {
@@ -168,11 +177,12 @@ button {
 .downdown {
   width: 95%;
   height: 1282.17px;
- border-radius: 1.5%;
+ border-radius: 1%;
   margin-top: 30px;
   padding: 8px;
+  padding-top: 40px;
   background-color: #1f1f1f;
- padding-top: 100px;
+ padding-top: 30px;
   margin-bottom: 40px;
 }
 
@@ -180,15 +190,16 @@ button {
 .downdownup{
    display: flex;
 
-   align-items: center;
-   padding-top: 300px;
+   
+   
+   
    flex-direction: column;
    align-items: center;
    background-color: #1f1f1f;
    height: 50%;
 border-bottom: 40%;
 border-radius: 10px 10px 0 0;
-padding:0 20px 0 20px ;
+padding:40px 20px 0 20px ;
 
 }
 
@@ -234,16 +245,18 @@ img{
 
 }
 #pro{
-  width: 50px;
-  height: 50px;
+  width: 53px;
+  height: 53px;
   border-radius: 50%;
   background-size: cover;
   background-position: center;
+  margin-top: 0;
   margin-bottom: 15px;
   position: absolute;
    border-color:#1e1f1f ;
   border-style: solid;
   border-width: 4px;
+
 }
 
 #pro:active{
@@ -299,4 +312,36 @@ img{
    background-image: url(https://media.kit.com/images/pages/home/p-flynn.jpg?q=40&fm=webp&auto=format&fit=facearea&facepad=3&crop=faces%2Cedges&w=200&h=200);
     z-index: 1;
     left:685px
+}
+.brand{
+
+  color: #f2efe9;
+  font-size: 70px;
+  font-weight: 900;
+}
+.brand2{
+
+  color: #f2efe9;
+  font-size:14px;
+  font-weight: 100;
+}
+.con{
+
+     margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+
+
+
+
+}
+
+.button2{
+
+  margin-top: 30px;
+  text-align: center;
 }
