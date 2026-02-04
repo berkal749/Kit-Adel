@@ -25,6 +25,7 @@
 :root {
   --font-body: system-ui, -apple-system, sans-serif;
   --font-title: 'Kit-sans', system-ui, sans-serif;
+  --color-primary: rgb(68, 177, 255);
 }
 
 body {
