@@ -58,7 +58,7 @@
     color: #1E1E1E;
     text-decoration: none;
     width: fit-content;
-    font-family:  "Oswald", sans-serif;;
+    font-family:  "Oswald", sans-serif;
 }
 #a-span{
     font-size: 16px;
@@ -128,30 +128,16 @@ h6{
 
 }
 .features-abdo-footer-button{
+    display: inline-block;
+    border: solid;
+    background-color: rgb(208,206,201);
+    padding: 14px 16px;
+    border-radius: 15px;
+    margin-top: 20px;
+    width: fit-content;
+    font-family: "Oswald", sans-serif;
 
 }
-
-/* KitSans - 100
-
-Family
-KitSans, sans-serif
-Style
-normal
-Weight
-100
-Color
-rgb(30, 30, 30)
-Size
-16px
-Line Height
-26px
- */
-
-
-
-
-
-
 
 
 
