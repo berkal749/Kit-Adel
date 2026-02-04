@@ -3,10 +3,20 @@
 
 
 
+.material-symbols-outlined {
+
+color: gold;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 
 .page {
   margin: 0;
-   font-family: 'KitSans', sans-serif; /* Uses your uploaded font! */
+
 }
 
 
@@ -38,7 +48,7 @@
 
 .up {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   
   width: 100%;
   height: 247.98px;
@@ -46,7 +56,7 @@
 }
 .rightup {
   margin: 0;
-
+  
   width: 53%;
   margin-right: 0px;
 }
@@ -54,7 +64,8 @@ p {
   text-align: left;
   line-height: 24px;
   text-justify: inter-word;
-  width: 90%;
+  width: 94%;
+  font-weight: 100;
 
   line-height: 1.6;
   margin-bottom: 20px;
@@ -62,14 +73,14 @@ p {
 
 .leftup {
   width: 44%;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 900;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  
   margin-left: 20px;
   
-    
+
   margin-right: 20px;
 }
 .leftdown {
@@ -155,24 +166,120 @@ button {
 }
 
 .downdown {
-  width: 100%;
+  width: 95%;
   height: 1282.17px;
+ border-radius: 1.5%;
+  margin-top: 30px;
+  padding: 8px;
+  background-color: #1f1f1f;
+ padding-top: 100px;
+  margin-bottom: 40px;
+}
+
+
+.downdownup{
+   display: flex;
+
   
-  
+   padding-top: 300px;
+   flex-direction: column;
+   align-items: center;
+   background-color: #1f1f1f;
+   height: 50%;
+border-bottom: 40%;
+border-radius: 10px 10px 0 0;
+padding:0 20px 0 20px ;
+
+}
+
+.downdowndown{
+   background-image: url(https://media.kit.com/images/pages/home/end-section/kit-broadcast-edit.png?q=72&fm=webp&auto=format&w=2167&h=1253);
+   height: 50%;
+     background-repeat:  no-repeat;
+    background-size: cover;
+    background-color: #1f1f1f;
+    border-radius: 0 0 20px 20px;
+padding:0 20px 0 20px ;
+
+
+
 }
 
 
     div {
-    font-family: 'KitSans', sans-serif; /* Uses your uploaded font! */
+    font-family: 'KitSans', sans-serif; 
     font-weight: 500;
     color: rgb(30, 30, 30);
     
-    /* The alignment settings you wanted */
-    text-align: justify;
+   
+  
     text-justify: inter-word;
     line-height: 1.6;
     
-    /* This helps punctuation "hang" to make the edge look straighter */
+   
     hanging-punctuation: allow-end; 
 }
 
+img{
+
+  width: 20px;
+  height: 20px;
+}
+
+.profiles{
+  display: inline-block;
+  
+
+
+
+}
+#pro{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+  position: absolute;
+}
+
+#pro:hover{
+
+  border-color:#f2ba41 ;
+  border-style: solid;
+  border-width: 4px;
+
+
+}
+.profile1{
+
+    background-image: url(https://media.kit.com/images/pages/home/n-vora.jpg?q=40&fm=webp&auto=format&fit=facearea&facepad=3&crop=faces%2Cedges&w=200&h=200);
+    z-index: 6;
+    left:500px;
+}
+.profile2{
+  background-image: url(https://media.kit.com/images/pages/home/k-bourgoin.jpg?q=40&fm=webp&auto=format&fit=facearea&facepad=3&crop=faces%2Cedges&w=200&h=200);
+  z-index: 5;
+  left:545px;
+}
+
+.profile3{
+   background-image: url(https://media.kit.com/images/pages/home/l-yeo.jpg?q=40&fm=webp&auto=format&fit=facearea&facepad=3&crop=faces%2Cedges&w=200&h=200);
+    z-index: 4;
+  }
+ 
+
+.profile4{
+   background-image: url(https://media.kit.com/images/pages/home/e-shleyner.jpg?q=40&fm=webp&auto=format&fit=facearea&facepad=3&crop=faces%2Cedges&w=200&h=200);
+     z-index: 3;
+}
+.profile5{
+   background-image: url(https://media.kit.com/images/pages/home/w-manney.jpg?q=40&fm=webp&auto=format&fit=facearea&facepad=3&crop=faces%2Cedges&w=200&h=200);
+
+     z-index: 2;
+  }
+
+.profile6{
+   background-image: url(https://media.kit.com/images/pages/home/p-flynn.jpg?q=40&fm=webp&auto=format&fit=facearea&facepad=3&crop=faces%2Cedges&w=200&h=200);
+    z-index: 1;
+}
