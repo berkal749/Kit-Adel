@@ -79,10 +79,26 @@ const pSectionAbdo = ["Reach your audience with personalized, engaging emails.",
 ];
 
 
-const grid = document.getElementById("featuresGrid");
+const abdoDiv = document.getElementById("featuresGrid");
 
 
 
+for (let i = 0 ; i < icons.length ; i++){
+  const divChild = document.createElement("div");
+  divChild.className = "features-abdo-Grid";
+  divChild.innerHTML =`
+    <div class = "child-abdo-Grid">
+      <span class = "svg-abdo-style">${icons[i]}</span>
+      <div class = "svg-abdo-Grid-text">
+        <h6> ${h6SectionAbdo[i]} </h6>
+        <p>  ${pSectionAbdo[i]}  </p>
+      </div>
+    </div>
+    
+    `;
+
+    abdoDiv.appendChild(divChild);
+}
 
 
 
