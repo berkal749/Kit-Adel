@@ -6,41 +6,49 @@
     font-weight: 500;
     font-style: normal;
 }
-
-.features{
-    font-family: 'KitSans', sans-serif;
-    width: 100%;
-    padding: 60px 0px; 
-    background-color: #F2EFE9;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-
-.features-content{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+.features-abdo{
+    font-family: 'KitSans', sans-serif;
+    width: 100%;
+    padding: 60px 20px; 
+    background-color: #F2EFE9;
     text-align: center;
 }
 
-.features-content-header{
-    max-width: 1100px;
-    padding: 0 10px;
 
+.features-abdo-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.features-content-header-text h2 {
-    padding: 0 20px;
+.features-abdo-content-header{
+    max-width: 1100px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.features-abdo-content-header-text{
     font-size: 50px;
     font-weight: 1000;
     color: #1e1e1e;
     line-height: 1.1;
     max-width: 1100px;
     margin-bottom: 30px;
+    text-align: center;
 
 }
 
 
-.features-content-header-text-bot{
+.features-abdo-content-header-text-bot{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +58,7 @@
 } 
 
 
-.features-header-bot-but{
+.features-abdo-header-bot-but{
     display: inline-block;
     padding: 14px 16px;
     border-radius: 15px;
@@ -65,12 +73,12 @@
     font-weight: 700;
 
 }
-.header-bot-but:hover {
+.features-abdo-header-bot-but:hover {
     background: #93d2ff;
 }
 
 
-.features-header-text {
+.features-abdo-header-text{
     margin-top: 0px ;
     text-align: center;
     font-size: 12px;
