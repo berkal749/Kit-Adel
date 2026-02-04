@@ -1,18 +1,11 @@
 
-@font-face {
-    font-family: 'KitSans';
-    /* Replace the filename below with your exact woff2 filename for 'Medium' */
-    src: url('fonts/92daa4d0098aa288-s.p.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
 *{
     margin: 0;
     padding: 0;
 }
 
 .features-abdo{
-    font-family: 'KitSans', sans-serif;
+    font-family:  "Oswald", sans-serif;
     width: 100%;
     padding: 60px 20px; 
     background-color: #F2EFE9;
@@ -33,7 +26,7 @@
 .features-abdo-content-header{
     max-width: 1100px;
     padding: 0 10px;
-    text-align: center;
+    align-items: center;
 }
 
 .features-abdo-content-header-text{
@@ -44,10 +37,8 @@
     max-width: 1100px;
     margin-bottom: 30px;
     text-align: center;
-
+    font-family:  "Oswald", sans-serif;
 }
-
-
 .features-abdo-content-header-text-bot{
     display: flex;
     flex-direction: column;
@@ -55,6 +46,7 @@
     gap: 12px;
     justify-content: center;
     justify-items: center;
+    font-family:  "Oswald", sans-serif;
 } 
 
 
@@ -66,10 +58,11 @@
     color: #1E1E1E;
     text-decoration: none;
     width: fit-content;
+    font-family:  "Oswald", sans-serif;;
 }
 #a-span{
     font-size: 16px;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family:  "Oswald", sans-serif;
     font-weight: 700;
 
 }
@@ -84,6 +77,122 @@
     font-size: 12px;
     color: #555;
 }
+
+.features-abdo-grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(33%,auto));
+    grid-template-rows: repeat(4,minmax(5%,auto));
+    justify-content: center;
+    justify-items: center;
+    gap: 15px;
+    text-align: center;
+
+
+}
+
+
+.features-abdo-Grid{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+}
+.child-abdo-Grid{
+    padding : 24px;
+    text-align: center;
+
+}
+.abdo-Grid-tex {
+    margin-top: 10px;
+    text-align: right;
+    font-family: 'KitSans', sans-serif;
+}
+h6{
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family:  "Oswald", sans-serif;
+    font-weight: 700;
+    color: rgb(30, 30, 30);
+    font-size: 20px;
+    line-height: 25px;
+}
+.abdo-Grid-text p{
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    color: rgb(30,30,30);
+    line-height: 26px;
+    font-weight: 100;
+    
+
+}
+.features-abdo-footer-button{
+
+}
+
+/* KitSans - 100
+
+Family
+KitSans, sans-serif
+Style
+normal
+Weight
+100
+Color
+rgb(30, 30, 30)
+Size
+16px
+Line Height
+26px
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 600px) {
