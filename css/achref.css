@@ -191,7 +191,7 @@ button {
 
    
    
-   
+   margin-top: 40px;
    flex-direction: column;
    align-items: center;
    background-color: #1f1f1f;
@@ -244,8 +244,8 @@ img{
 
 }
 #pro{
-  width: 50px;
-  height: 50px;
+  width: 53px;
+  height: 53px;
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -341,6 +341,6 @@ img{
 
 .button2{
 
-  margin-top: 40px;
+  margin-top: 30px;
   text-align: center;
 }
