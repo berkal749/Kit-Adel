@@ -1,30 +1,71 @@
 .h-title {
   font-size: 3.5em;
   font-weight: bold;
-  color: #333333;
+  color: #1e1e1e;
+  line-height: 1.1;
   text-align: center;
   margin-bottom: 60px;
 }
 
 .h-carousel {
-  height: 200px;
+  max-width: 100vw;
+  overflow-x: auto;
+  display: flex;
+  gap: 28px;
   width: 100%;
-  background: #007bff;
-  margin-bottom: 120px;
+  margin-bottom: 90px;
+  padding: 20px;
+}
+
+.h-carousel-item {
+  display: flex;
+  max-width: 187px;
+  flex-direction: column;
+  gap: 16px;
+  align-self: flex-start;
+}
+
+.h-carousel-image {
+  width: 187px;
+  height: 187px;
+  border-radius: 4px;
+}
+
+.h-carousel-text {
+  max-width: 100%;
+  color: #1e1e1e;
+}
+
+.h-carousel-name {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 0.375rem;
+}
+
+.h-carousel-role {
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.1;
+  color: #1e1e1e;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 .h-highlight {
-  color: #007bff;
+  color: var(--color-primary);
 }
 .h-text {
-  font-size: 1.2em;
+  font-size: 1.25rem;
   line-height: 1.6;
-  color: #666666;
+  color: #1e1e1e;
+  font-weight: 400;
   margin-bottom: 15px;
-  max-width: 500px;
+  max-width: 720px;
   text-align: center;
   margin: auto;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .h-cta-container {
@@ -34,21 +75,27 @@
 
 .h-cta {
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 1em;
-  color: #ffffff;
-  background-color: #007bff;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: rgb(30, 30, 30);
+  background-color: var(--color-primary);
   border: none;
-  border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-bottom: 14px;
+  border-radius: 12px;
+  width: max-content;
+}
+
+.h-cta:hover {
+  background-color: #a2d1f1;
 }
 
 .h-note {
   display: block;
-  font-size: 0.9em;
-  color: #999999;
+  font-size: 0.75rem;
+  color: #1e1e1e;
   text-align: center;
+  font-weight: 400;
 }

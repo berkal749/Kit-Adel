@@ -1,16 +1,50 @@
+@font-face {
+  font-family: 'Kit-sans';
+  src: url('./fonts/regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
- @font-face {
-    font-family: 'KitSans';
-    /* Replace the filename below with your exact woff2 filename for 'Medium' */
-    src: url('fonts/92daa4d0098aa288-s.p.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
+@font-face {
+  font-family: 'Kit-sans';
+  src: url('./fonts/bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kit-sans';
+  src: url('./fonts/italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --font-body: system-ui, -apple-system, sans-serif;
+  --font-title: 'Kit-sans', system-ui, sans-serif;
+  --color-primary: rgb(68, 177, 255);
 }
 
 body {
-  
+  font-family: var(--font-body);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+  font-weight: 400;
+}
