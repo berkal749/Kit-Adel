@@ -139,10 +139,12 @@ const CarouselItem = (item) => `
         <p class="h-carousel-role">${item.role}</p>
       </div>
     </div>
-    `
+    `;
 
 document.addEventListener("sectionsLoaded", () => {
   console.log("DOM fully loaded and parsed - houssem.js");
-  const carousel = document.getElementById("h-carousel");
+  const carousel = document.getElementById("group1");
+  const carousel2 = document.getElementById("group2");
   carousel.innerHTML = items.map(CarouselItem).join("")
+  carousel2.innerHTML = items.map(CarouselItem).join("")
 });

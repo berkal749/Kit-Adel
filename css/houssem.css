@@ -16,6 +16,18 @@
   margin-bottom: 90px;
   padding: 20px;
 }
+.h-carousel::-webkit-scrollbar {
+  display: none;
+}
+.group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex: auto;
+  will-change: transform;
+  animation:  spin 25s linear infinite;
+}
 
 .h-carousel-item {
   display: flex;
@@ -23,6 +35,15 @@
   flex-direction: column;
   gap: 16px;
   align-self: flex-start;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .h-carousel-image {
