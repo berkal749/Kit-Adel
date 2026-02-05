@@ -26,9 +26,12 @@
   gap: 20px;
   flex: auto;
   will-change: transform;
-  animation:  spin 25s linear infinite;
+  animation:  spin 260s linear infinite;
 }
-
+.h-carousel:hover .group{
+  animation-play-state: paused;
+  cursor:grab;
+}
 .h-carousel-item {
   display: flex;
   max-width: 187px;
