@@ -74,42 +74,101 @@
     color: #555;
 }
 
-.features-abdo-grid-container{
-    display: grid;
+/* .features-abdo-grid-container{
+    /* display: grid;
     grid-template-columns: repeat(3, minmax(250px, 1fr));
     grid-template-rows: repeat(4,minmax(5%,auto));
     justify-content: center;
     justify-items: center;
     gap: 15px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 15px; */
+    /* background: white; 
+    display: grid;
+    grid-template-columns: repeat(3,minmax(250px,auto));
+    gap : 15px; 
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: red;
+}  */
+/* .features-abdo-grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+} */
+.features-abdo-grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 50px;
 }
 
 
-.features-abdo-Grid{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    background-color: white;
+
+/* .features-abdo-Grid{
+    margin: 15px;
+    background: white;
     border-radius: 15px;
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-}
-.child-abdo-Grid{
+    align-content: center;
+}  */
+
+
+/* .features-abdo-Grid{
+    background: #fff;
+    border-radius: 18px;
+    padding: 22px;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+} */
+ .features-abdo-Grid{
+    background: #fff;
+    border-radius: 18px;
+    padding: 32px 24px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
 }
 
-.abdo-Grid-text {
+
+    
+/* .child-abdo-Grid{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} */
+ .child-abdo-Grid{
+    display: flex;
+    gap: 16px;
 }
- h6{
+
+ /* .span-class{
+    margin-top: 15px;  
+    text-align: left;
+    align-items: s;
+}  */
+.features-abdo-Grid svg{
+    width: 40px;
+    height: 40px;
+    stroke: #44B1FF;
+    margin-bottom: 0px;
+}
+
+
+/* .abdo-Grid-text {
+    margin: 0px 15px;
+}
+.abdo-Grid-text  h6{
     text-align: left;
     font-family:  var(--font-title);
     font-weight: 700;
@@ -118,38 +177,57 @@
     line-height: 25px;
     margin: 0; 
     text-align: left;
- }
-p{
-    text-align: left;
-    font-family: "Oswald", sans-serif;
-    font-size: 13px;
-    color: rgb(30,30,30,1);
-    line-height: 26px;
-    font-weight: 100;
-    margin: 0;
-    margin-top: 5px;
-    text-align: left;
+ }  */
 
-} 
+
+ /* .abdo-Grid-text h6{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    text-align: left;
+}
+
+.abdo-Grid-text p{
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+} */
+ /* .features-abdo-Grid h6{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.features-abdo-Grid p{
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+} */
+
+
+
+
+
+
+
+
+.features-abdo-footer-button{
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+
+
+
+
 
 
 
 /* 
-Family
-"Libre Franklin", "Libre Franklin Fallback"
-Style
-normal
-Weight
-400
-Color
-rgb(30, 30, 30)
-Size
-14px
-Line Height
-20px */
-
-
-
 .features-abdo-footer-button{
     display: inline-block;
     background: rgb(208,206,201);
@@ -158,7 +236,7 @@ Line Height
     margin-top: 20px;
     width: fit-content;
     font-family: "Oswald", sans-serif;
-}
+} */
 .features-abdo-footer-button:hover{
     background: rgb(208,206,201,0.5);
     cursor: pointer;
