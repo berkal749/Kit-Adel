@@ -144,7 +144,9 @@ const CarouselItem = (item) => `
 document.addEventListener("sectionsLoaded", () => {
   console.log("DOM fully loaded and parsed - houssem.js");
   const carousel = document.getElementById("group1");
+  // 3bd el rzz9
   const carousel2 = document.getElementById("group2");
   carousel.innerHTML = items.map(CarouselItem).join("")
+  // 3bd el rzz9
   carousel2.innerHTML = items.map(CarouselItem).join("")
 });
