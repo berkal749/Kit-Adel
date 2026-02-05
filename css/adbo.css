@@ -129,12 +129,11 @@ h6{
 }
 .features-abdo-footer-button{
     display: inline-block;
-    border: solid;
     background-color: rgb(208,206,201);
-    padding: 14px 16px;
-    border-radius: 15px;
+    padding: 10px 30px;
+    border-radius: 12px;
     margin-top: 20px;
-    width: fit-content;
+    /* width: fit-content; */
     font-family: "Oswald", sans-serif;
 
 }
