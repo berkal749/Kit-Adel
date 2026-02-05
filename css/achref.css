@@ -44,7 +44,7 @@
   width: 53%;
   margin-right: 0px;
 }
-p {
+.p {
   text-align: left;
   line-height: 24px;
   text-justify: inter-word;
@@ -174,7 +174,7 @@ p {
   padding: 0 20px 0 20px;
 }
 
-div {
+.div {
   font-family: "KitSans", sans-serif;
   /* Use the 500 weight to match your 'KitSansFont - 500' reference */
   font-weight: 500;
@@ -263,7 +263,7 @@ div {
   font-weight: 100;
 }
 .con {
-  margin-top: 150px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
