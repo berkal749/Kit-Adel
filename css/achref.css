@@ -72,6 +72,8 @@ p {
 }
 
 .leftup {
+
+
   width: 44%;
   font-size: 45px;
   font-weight: 900;
@@ -218,20 +220,13 @@ padding:0 20px 0 20px ;
 
 
     div {
-    font-family: 'KitSans', sans-serif; 
-    font-weight: 500;
+    font-family: 'KitSans', sans-serif;
+    /* Use the 500 weight to match your 'KitSansFont - 500' reference */
+    font-weight: 500; 
     color: rgb(30, 30, 30);
-    
-   
-  
-    text-justify: inter-word;
-    line-height: 1.6;
-    
-   
-    hanging-punctuation: allow-end; 
 }
 
-img{
+.imgach{
 
   width: 20px;
   height: 20px;
@@ -316,8 +311,12 @@ img{
 .brand{
 
   color: #f2efe9;
-  font-size: 70px;
-  font-weight: 900;
+  font-size: 60px;
+  font-weight: 800;
+letter-spacing: -0.02em;
+  line-height: 1.5;
+  font-stretch: condensed; 
+  transform: scaleY(1.1); 
 }
 .brand2{
 
