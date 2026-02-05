@@ -21,14 +21,6 @@
   font-style: italic;
   font-display: swap;
 }
-@font-face {
-    font-family: 'KitSans';
-    /* Replace the filename below with your exact woff2 filename for 'Medium' */
-    src: url('fonts/92daa4d0098aa288-s.p.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
-
 
 
 :root {
