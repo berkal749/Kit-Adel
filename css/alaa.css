@@ -25,6 +25,7 @@ body { font-family:'Inter', system-ui, -apple-system, sans-serif; background:#ff
 
 
 .btn { margin-top:12px; width:140px; height:44px; border:none; border-radius:12px; background:#3cadf3; color:black; font-weight:600; font-size:15px; cursor:pointer; }
+.btn:hover{background:#93d2ff ;}
 .note { font-size:12px; color:#64748b; margin-top:8px; }
 
 

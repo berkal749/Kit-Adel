@@ -1,8 +1,4 @@
 
-*{
-    margin: 0;
-    padding: 0;
-}
 
 .features-abdo{
     font-family:  "Oswald", sans-serif;
@@ -129,13 +125,16 @@ h6{
 }
 .features-abdo-footer-button{
     display: inline-block;
-    background-color: rgb(208,206,201);
+    background: rgb(208,206,201);
     padding: 10px 30px;
     border-radius: 12px;
     margin-top: 20px;
-    /* width: fit-content; */
+    width: fit-content;
     font-family: "Oswald", sans-serif;
-
+}
+.features-abdo-footer-button:hover{
+    background: rgb(208,206,201,0.5);
+    cursor: pointer;
 }
 
 
