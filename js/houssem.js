@@ -141,6 +141,8 @@ const CarouselItem = (item) => `
     </div>
     `;
 
+const highlightWords = ['bloggers', 'coaches', 'creators', 'entrepreneurs', 'YouTubers', 'authors', 'writers', 'podcasters'];
+
 document.addEventListener("sectionsLoaded", () => {
   console.log("DOM fully loaded and parsed - houssem.js");
   const carousel = document.getElementById("group1");
@@ -149,4 +151,43 @@ document.addEventListener("sectionsLoaded", () => {
   carousel.innerHTML = items.map(CarouselItem).join("")
   // 3bd el rzz9
   carousel2.innerHTML = items.map(CarouselItem).join("")
+
+  const highlight = document.getElementById("h-highlight");
+
+  // Create initial word element
+  const createWordElement = (word) => {
+    const span = document.createElement('span');
+    span.className = 'h-highlight-text';
+    span.textContent = word;
+    return span;
+  };
+
+  // Set initial word
+  let currentWordIndex = 0;
+  highlight.appendChild(createWordElement(highlightWords[currentWordIndex]));
+
+  setInterval(() => {
+    const currentElement = highlight.querySelector('.h-highlight-text');
+
+    // Get next word
+    const nextWordIndex = Math.floor(Math.random() * highlightWords.length);
+    currentWordIndex = nextWordIndex;
+
+    // Add exit animation to current word
+    currentElement.classList.add('exit');
+
+    // Create new word element
+    const newElement = createWordElement(highlightWords[nextWordIndex]);
+
+    // Add new element after a short delay
+    setTimeout(() => {
+      highlight.appendChild(newElement);
+    }, 100);
+
+    // Remove old element after animation completes
+    setTimeout(() => {
+      currentElement.remove();
+    }, 100);
+  }, 2000);
 });
+

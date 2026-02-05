@@ -21,19 +21,19 @@
   display: none;
 }
 /* 3nd el rzza9 */
-.group{
+.group {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   flex: auto;
   will-change: transform;
-  animation:  spin 260s linear infinite;
+  animation: spin 260s linear infinite;
 }
 /* 3bde3l rza9 */
-.h-carousel:hover .group{
+.h-carousel:hover .group {
   animation-play-state: paused;
-  cursor:grab;
+  cursor: grab;
 }
 .h-carousel-item {
   display: flex;
@@ -82,7 +82,45 @@
 
 .h-highlight {
   color: var(--color-primary);
+  font: var(--font-title);
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  vertical-align: bottom;
+  min-width: 10px;
 }
+
+.h-highlight-text {
+  display: inline-block;
+  animation: slideUp 0.25s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.h-highlight-text.exit {
+  animation: slideUpExit 0.25s ease-out forwards;
+}
+
+@keyframes slideUpExit {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
 .h-text {
   font-size: 1.25rem;
   line-height: 1.6;
