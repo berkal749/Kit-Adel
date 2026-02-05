@@ -95,6 +95,7 @@ document.addEventListener("sectionsLoaded", () => {
     divChild.className = "features-abdo-Grid";
     divChild.innerHTML = `
     <div class = "child-abdo-Grid">
+        <span>1</span>
       <div class = "abdo-Grid-text">
         <h6> ${h6SectionAbdo[i]} </h6>
         <p>  ${pSectionAbdo[i]}  </p>
