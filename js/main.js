@@ -18,8 +18,8 @@ const sections = [
     file: "sections/alaa.html",
   },
   {
-    id: "adbo",
-    file: "sections/adbo.html",
+    id: "abdo",
+    file: "sections/abdo.html",
   },
   {
     id: "jamal",
