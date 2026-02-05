@@ -1,11 +1,11 @@
- * { margin:0; padding:0; box-sizing:border-box; }
+
 body { font-family:'Inter', system-ui, -apple-system, sans-serif; background:#fff; color:#111; }
 
 .container { max-width:1200px; margin:auto; padding:80px 24px; }
 
 
-.header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:80px; }
-.header h1 { font-size:56px; font-weight:800; line-height:1.05; }
+.alaa-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:80px; }
+.alaa-header h1 { font-size:56px; font-weight:800; line-height:1.05; }
 .jump-btn { background:#f1f1f1; padding:12px 18px; border-radius:999px; font-size:14px; font-weight:500; cursor:pointer; text-decoration:none; color:#000; }
 
 
