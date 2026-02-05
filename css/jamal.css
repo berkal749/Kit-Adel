@@ -1,0 +1,123 @@
+body {
+    padding: 40px 20px;
+}
+
+.information {
+    font-size: 52px;
+    font-weight: 00;
+    line-height: 1.1;
+    margin: 0 0 30px 0;
+    font-family: 'KitSans';
+    max-width: max-content;
+
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 12px 0 0 0;
+}
+
+button {
+    padding: 12px 24px;
+    height: 48px;
+    width: 150px;
+    border-radius: 8px;
+    background-color: #45b1ff;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.gird-top-view {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: end;
+}
+
+.top-view-items {
+    padding-left: 0;
+    padding-top: 0;
+    color: black;
+}
+
+.top-view-items p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.containerpps {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.cardpps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card-items {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;   
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.imagpps{
+height: 100px;
+width: 100px;
+}
+
+.card-content {
+    padding: 24px;
+    background-color: #faf8f5;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.card-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 10px;
+    color: #666;
+}
