@@ -39,3 +39,16 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+  font-weight: 400;
+}
