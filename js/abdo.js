@@ -78,14 +78,14 @@ document.addEventListener("sectionsLoaded", () => {
   let dev = document.getElementsByClassName("Achild-gird")
   console.log(dev)
   show.onclick = () => {
-    shadow.style.boxShadow = "0px -50px 200px 200px #f2efe9ac";
     for (let i = 6 ; i < pSectionAbdo.length ; i++){
 
       if(dev[i].style.display === "none"){
         dev[i].style.display = "block";
-  
+        shadow.style.background = "transparent";
       }else{
         dev[i].style.display = "none";
+        shadow.style.background = "linear-gradient(to top, #F2eFe9 40%, transparent)"
       }
 
     }
