@@ -299,14 +299,18 @@ text-align: center;
 .A-header-button{
     text-decoration: none;
     background: #45b1ff;
-    padding: 12px 16px;
+    padding: 13px 20px;
     border-radius: 10px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
     display: inline-block;
     color: rgb(30,30,30);
-    font-size: 14px;
+    font-size: 16px;
     line-height: 16px;
+}
+.A-header-button:hover{
+        background: #45b2ff4a;
+
 }
 .A-header-p{
     color: rgb(30,30,30,0.8);
@@ -365,13 +369,21 @@ text-align: center;
     background: rgb(208,206,201);
     padding: 10px 30px;
     border-radius: 10px;
-    margin: 15px 0px;
+    margin: 10px 0px;
     width: fit-content;
     font-family: "Oswald", sans-serif;
-    
-    
-
 }
+.abdou-shadow{
+    /* box-shadow: 0px -50px 200px 200px #f2efe9ac; */
+    width: 100%;
+    background: linear-gradient(to bottom, #F2eFe9, transparent);
+    height: 40px;
+}
+.features-abdo-footer-button:hover{
+    background-color: rgb(208,206,201,0.5);
+    cursor: pointer;
+}
+
 
 
 

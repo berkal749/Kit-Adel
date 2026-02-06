@@ -56,6 +56,7 @@ document.addEventListener("sectionsLoaded", () => {
   console.log("DOM fully loaded and parsed - abdo.js");
   const abdoDiv = document.getElementById("featuresGrid");
     let show = document.getElementById("butt");
+    let shadow =document.getElementById("A-shadow")
   for (let i = 0; i < pSectionAbdo.length; i++) {
     const divChild = document.createElement("div");
     divChild.className = "Achild-gird";
@@ -77,7 +78,7 @@ document.addEventListener("sectionsLoaded", () => {
   let dev = document.getElementsByClassName("Achild-gird")
   console.log(dev)
   show.onclick = () => {
-
+    shadow.style.boxShadow = "0px -50px 200px 200px #f2efe9ac";
     for (let i = 6 ; i < pSectionAbdo.length ; i++){
 
       if(dev[i].style.display === "none"){
@@ -90,6 +91,7 @@ document.addEventListener("sectionsLoaded", () => {
     }
     if(dev[6].style.display !== "none"){
       show.textContent = "Show lass features"
+      shadow.style.boxShadow = "none"
     }
       
     
