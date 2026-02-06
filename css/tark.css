@@ -95,7 +95,7 @@
     color: rgb(30,30,30);
     height: 55px;
     border: none;
-    font-size: 13px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     border-radius: 5px;
@@ -142,12 +142,65 @@ border-radius: 25px;
 .the-right-one{  
     margin-left: 30px;
    width: 100%;
+   position: relative;
 }
 .the-right-pictur{
 border-radius: 25px;
 width: 100%;
 height: auto;
+  display: block;
 }
+.the-text-insid-box{
+left: 0;
+bottom: 0;
+position: absolute;
+  bottom: 10px;   
+  left: 10px;    
+  color: white; 
+  font-size: 16px;
+  text-align: left;
+}
+.the1-text-insid-box{
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(181, 180, 180);
+  font-family:oswald;
+  margin-bottom: 0px; 
+}
+.the2-text-insid-box{
+ margin-top: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.the3-text-insid-box{
+  font-size: 12px;
+   font-weight: bold;
+   margin-top: 0px;
+}
+.the-pictures-insid-box{
+position: absolute;
+ bottom: 50px;
+ right: 20px;
+ display: flex;
+    flex-direction:column;
+}
+.the-pictures-insid-box1{
+    width: 45px;
+    border-radius: 10px;
+     object-fit: cover;        
+  margin-bottom: 5px;
+  margin-top: 10px;
+  border-color: #cdcdcd;
+border-width: 2px;
+}
+.the-pictures-insid-box1:hover{
+    border-color: #000000;
+}
+
+
+
+
 .the-second-text{
 font-size: 17px;
 font-family: oswald;
@@ -264,6 +317,15 @@ margin-top: 20px;
  margin-left: 20px;
  margin-right: 20px;
  border-radius: 25px;
-box-shadow: inset 0px -50px 25px -15px rgba(234, 179, 8, 0.5);
+
 height: auto;
+}
+.tarek-shadow{
+   width:100%;
+    box-shadow: 0px -130px 59px 50px rgba(255, 255, 255,1);
+ 
+    border-width: 2px;
+  margin-left: 40px;
+    height: 120px;
+    margin-top: 20px;
 }

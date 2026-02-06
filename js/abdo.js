@@ -55,7 +55,8 @@ const pSectionAbdo = [
 document.addEventListener("sectionsLoaded", () => {
   console.log("DOM fully loaded and parsed - abdo.js");
   const abdoDiv = document.getElementById("featuresGrid");
-
+    let show = document.getElementById("butt");
+    let shadow =document.getElementById("A-shadow")
   for (let i = 0; i < pSectionAbdo.length; i++) {
     const divChild = document.createElement("div");
     divChild.className = "Achild-gird";
@@ -68,34 +69,48 @@ document.addEventListener("sectionsLoaded", () => {
         </div>
     </div>
     `;
+    if(i >= 6){
+      divChild.style.display = "none";
+    }
     abdoDiv.appendChild(divChild);
     console.log(abdoDiv);
   }
+  let dev = document.getElementsByClassName("Achild-gird")
+  console.log(dev)
+  show.onclick = () => {
+    shadow.style.boxShadow = "0px -50px 200px 200px #f2efe9ac";
+    for (let i = 6 ; i < pSectionAbdo.length ; i++){
+
+      if(dev[i].style.display === "none"){
+        dev[i].style.display = "block";
+  
+      }else{
+        dev[i].style.display = "none";
+      }
+
+    }
+    if(dev[6].style.display !== "none"){
+      show.textContent = "Show lass features"
+      shadow.style.boxShadow = "none"
+    }
+      
+    
+  }
 });
-// let expanded = false;
-// const toggleBtn = document.getElementById("toggleBtn");
-// const grid = document.getElementById("featuresGrid");
 
-// toggleBtn.addEventListener("click", () => {
-//   expanded = !expanded;
-//   grid.style.maxHeight = expanded ? "none" : "520px";
-//   toggleBtn.innerHTML = expanded ? "Show less features" : "Show more features";
-// });
 
-// grid.style.overflow = "hidden";
-// grid.style.maxHeight = "520px";
-// const gradient = document.querySelector(".features-abdo-gradient");
 
-// toggleBtn.addEventListener("click", () => {
-//   expanded = !expanded;
 
-//   grid.style.maxHeight = expanded ? "none" : "520px";
-//   gradient.style.display = expanded ? "none" : "block";
 
-//   toggleBtn.innerHTML = expanded
-//     ? "Show less features"
-//     : "Show more features";
-// });
 
-// grid.style.maxHeight = "520px";
-// grid.style.overflow = "hidden";
+
+
+
+
+
+
+
+
+
+
+
