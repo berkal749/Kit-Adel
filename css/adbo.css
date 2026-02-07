@@ -1,270 +1,3 @@
-/* 
-
-.features-abdo{
-    font-family:  var(--font-title);
-    width: 100%;
-    padding: 60px 20px; 
-    background-color: #F2EFE9;
-    text-align: center;
-}
-
-
-.features-abdo-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1100px;
-    padding: 0 20px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.features-abdo-content-header{
-    max-width: 1100px;
-    padding: 0 10px;
-    align-items: center;
-}
-
-.features-abdo-content-header-text{
-    font-size: 40px;
-    font-weight: 1000;
-    color: #1e1e1e;
-    line-height: 1.1;
-    max-width: 1100px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-family:  "Oswald", sans-serif;
-}
-.features-abdo-content-header-text-bot{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    justify-content: center;
-    justify-items: center;
-    font-family:  "Oswald", sans-serif;
-} 
-
-
-.features-abdo-header-bot-but{
-    display: inline-block;
-    padding: 14px 16px;
-    border-radius: 15px;
-    background: #44B1FF;
-    color: #1E1E1E;
-    text-decoration: none;
-    width: fit-content;
-    font-family:  "Oswald", sans-serif;
-}
-#a-span{
-    font-size: 16px;
-    font-family:  var(--font-title);
-    font-weight: 700;
-
-}
-.features-abdo-header-bot-but:hover {
-    background: #93d2ff;
-}
-
-
-.features-abdo-header-text{
-    margin-top: 0px ;
-    text-align: center;
-    font-size: 12px;
-    color: #555;
-}
-
-
-.features-abdo-grid-container {
-    position: relative;   /* REQUIRED */
-    /* display: grid;
-    grid-template-columns: repeat(3, minmax(250px, auto));
-    gap: 24px;
-    margin-top: 50px;
-    padding: 12px;
-    overflow: hidden;     /* IMPORTANT for fade */
-/* }
-.features-abdo-gradient {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-    height: 120px;
-
-    background: linear-gradient(
-        to top,
-        #F2EFE9 0%,
-        rgba(242, 239, 233, 0) 100%
-    );
-
-    pointer-events: none;
-    z-index: 5;
-} */ 
-
-
-
-/* 
-.features-abdo-Grid{
-    background: #fff;
-    border-radius: 18px;
-    padding: 32px 24px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-}
-
-
-    
-
-.child-abdo-Grid{
-    background: red; 
-
-    display: grid;
-    justify-content: start;
-    height: 100%;
-    gap: 0px;
-}
-
-.span-class{
-    margin-top: 15px;  
-    text-align: left;
-    align-items: s;
-}  
-.features-abdo-Grid svg{
-    background: purple; 
-    width: 30px;
-    height: 30px;
-    stroke: #44B1FF;
-    margin-bottom: 0px;
-    
-}
-.abdo-Grid-text {
-    background: yellow;
-    padding: 0px;
-} 
-.svg-ui{
-    background: green;
-    padding: 0px; 
-}
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .features-abdo-footer-button{
-    margin-top: 30px;
-    cursor: pointer;
-    font-weight: 600;
-}
- */
-
-
-
-
-
-
-
-/* .features-abdo-footer-button{
-    display: inline-block;
-    background: rgb(208,206,201);
-    padding: 10px 30px;
-    border-radius: 12px;
-    margin-top: 20px;
-    width: fit-content;
-    font-family: "Oswald", sans-serif;
-}  
-.features-abdo-footer-button:hover{
-    background: rgb(208,206,201,0.5);
-    cursor: pointer;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media (max-width: 600px) {
-    section {
-        padding: 40px 15px;
-    }
-} 
-
-
-
-@media (max-width: 768px) {
-
-    .features-content-header-text h2{
-        font-size: 32px;
-    }
-
-    .features{
-        padding: 40px 0;
-    }
-
-}
-
-
- */
-
-
-
-
-
-
-
-
-
   .A-section{
     background:#F2eFe9 ;
     display: flex;
@@ -385,15 +118,6 @@ text-align: center;
     background-color: rgb(208,206,201,0.5);
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
 .svg-style {
     display: block;
     width: 25px; 
@@ -401,10 +125,19 @@ text-align: center;
     margin-bottom: 10px;
     color: #45b1ff; 
 }
-
-
 .svg-style svg {
     width: 100%;
     height: 100%;
     display: block;
+}
+
+@media (max-width: 900px){
+    .A-grid-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (ax-width: 500px){
+    .A-grid-container{
+        grid-template-columns: 1fr;
+    }
 }
