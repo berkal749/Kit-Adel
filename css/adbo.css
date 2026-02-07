@@ -136,7 +136,7 @@ text-align: center;
         grid-template-columns: repeat(2,1fr);
     }
 }
-@media (ax-width: 500px){
+@media (max-width: 500px){
     .A-grid-container{
         grid-template-columns: 1fr;
     }
