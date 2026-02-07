@@ -92,8 +92,10 @@ document.addEventListener("sectionsLoaded", () => {
     if(dev[6].style.display !== "none"){
       show.textContent = "Show lass features"
       shadow.style.boxShadow = "none"
+    }else{
+      show.textContent = "Show more features"
     }
-      
+    
     
   }
 });

@@ -135,9 +135,20 @@ text-align: center;
     .A-grid-container{
         grid-template-columns: repeat(2,1fr);
     }
+    .A-header-text h2{
+        font-size: 56px;
+    }
 }
 @media (max-width: 500px){
     .A-grid-container{
         grid-template-columns: 1fr;
+    }
+    .A-header-text h2{
+        font-size: 40px;
+        margin: 20px;
+    }
+    .A-header-button{
+        font-size: 14px;
+        padding: auto;
     }
 }
