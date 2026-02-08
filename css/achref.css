@@ -116,7 +116,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 12px;
-   grid-row: span 2;
+  grid-row: span 2;
 }
 
 .pic2 {
@@ -337,28 +337,18 @@ a {
   white-space: nowrap;
 }
 
-
-
-@media (max-width:380px) {
+@media (max-width: 380px) {
   @media (min-width: 600px) {
+    .leftup {
+      font-size: 40px;
+    }
 
-  .leftup {
-    font-size: 40px;
+    .downup {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+      height: 1500px;
+    }
   }
-
-  .downup {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer {
-  height: 1500px;
-
 }
-
-
-}
-
-
-
-}
-
