@@ -105,7 +105,7 @@
   display: grid;
   justify-content: center;
   grid-template-rows: 276px 276px;
-  grid-template-columns: 376px 376px 376px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1em;
   grid-template-areas:
     "box-1 box-2 box-3"
@@ -116,6 +116,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 12px;
+   grid-row: span 2;
 }
 
 .pic2 {
@@ -276,7 +277,7 @@
 }
 
 .footer {
-  height: 1000px;
+  height: 1500px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -335,3 +336,29 @@ a {
   color: #f2efe9;
   white-space: nowrap;
 }
+
+
+
+@media (max-width:380px) {
+  @media (min-width: 600px) {
+
+  .leftup {
+    font-size: 40px;
+  }
+
+  .downup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+  height: 1500px;
+
+}
+
+
+}
+
+
+
+}
+
