@@ -131,8 +131,8 @@ const sections = [
     },
   },
   {
-    id: "jamal",
-    file: "sections/jamal.html",
+    id: "djamel",
+    file: "sections/djamel.html",
   },
   {
     id: "achref",
