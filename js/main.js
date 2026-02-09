@@ -21,10 +21,10 @@ const sections = [
     id: "abdo",
     file: "sections/abdo.html",
   },
-  {
-    id: "jamal",
-    file: "sections/jamal.html",
-  },
+  // {
+  //   id: "jamal",
+  //   file: "sections/jamal.html",
+  // },
   {
     id: "achref",
     file: "sections/achref.html",
