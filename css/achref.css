@@ -350,7 +350,7 @@ a {
   white-space: nowrap;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   
     .leftup {
       font-size: 40px;
@@ -366,7 +366,7 @@ a {
             "box-1 box-2"
             "box-1 box-4"
             "box-5 box-3" !important; /* Semicolon ONLY here at the end */
-        margin-top: 100px !important; /* This will now trigger */
+        margin-top: 300px !important; /* This will now trigger */
 
     }
     .footer {
