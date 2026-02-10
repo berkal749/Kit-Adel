@@ -32,6 +32,7 @@
 
 .up {
   display: flex;
+
   justify-content: center;
 
   width: 100%;
@@ -91,6 +92,7 @@
   font-weight: 100;
   color: #f2efe9;
   margin-top: 10px;
+  display: flex;
 }
 
 .down {
@@ -115,6 +117,7 @@
   background-image: url(https://media.kit.com/images/pages/home/end-section/nathan-creators-group.jpg?q=75&fm=webp&auto=format&fit=facearea&crop=faces&facepad=7&w=768&h=1150);
   background-repeat: no-repeat;
   background-size: cover;
+
   border-radius: 12px;
   grid-area: box-1;
 }
@@ -150,7 +153,7 @@
   background-size: cover;
   border-radius: 12px;
 
-   grid-area: box-4;
+  grid-area: box-4;
 }
 
 .pic3 {
@@ -163,7 +166,7 @@
 
 .downdown {
   width: 95%;
-  height: 1282.17px;
+  height: fit-content;
   border-radius: 1%;
   margin-top: 30px;
   padding: 8px;
@@ -187,7 +190,7 @@
 
 .downdowndown {
   background-image: url(https://media.kit.com/images/pages/home/end-section/kit-broadcast-edit.png?q=72&fm=webp&auto=format&w=2167&h=1253);
-  height: 50%;
+  height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #1f1f1f;
@@ -195,7 +198,6 @@
   padding: 0 20px 0 20px;
 }
 
- 
 .imgach {
   width: 20px;
   height: 20px;
@@ -254,7 +256,7 @@
   background-image: url(https://media.kit.com/images/pages/home/w-manney.jpg?q=40&fm=webp&auto=format&fit=facearea&facepad=3&crop=faces%2Cedges&w=200&h=200);
 
   z-index: 2;
-  left: 52.0%;
+  left: 52%;
 }
 
 #profile6 {
@@ -287,6 +289,9 @@
 .button2 {
   margin-top: 30px;
   text-align: center;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
 }
 
 .footer {
@@ -351,56 +356,106 @@ a {
 }
 
 @media (max-width: 900px) {
-  
-    .leftup {
-      font-size: 40px;
-    }
-
-    .downup {
-
-      height: fit-content;
-       grid-template-rows: 276px 276px 276px;
-  grid-template-columns: 45% 45%;
-        display: grid; /* Make sure grid is active here */
-        grid-template-areas: 
-            "box-1 box-2"
-            "box-1 box-4"
-            "box-5 box-3" !important; /* Semicolon ONLY here at the end */
-        margin-top: 300px !important; /* This will now trigger */
-
-    }
-    .footer {
-      height: 1500px;
-    }
+  .title1{
 
 
-    .pic1 {
- 
-  grid-area: box-1;
-}
+    width: 400px;
 
-.pic2 {
-  
+  }
+  .rightup{
+    width: 90%;
+    margin-left: 20px;
+  }
+  .up {
+    flex-direction: column;
 
-  grid-area: box-2;
-}
-.pic4 {
-  
+    width: 100%;
+    height: fit-content;
+  }
+  .leftup {
+    font-size: 40px;
+  }
+  .downdowndown {
+    height: 600px; /* Reduced from 1000px so it takes up less room */
+    width: 90%;
+    margin: 0 auto; /* Centers the container */
 
-   grid-area: box-4;
-}
+    /* THE FIX: */
 
-.pic3 {
-  
-  grid-area: box-3;
-}
+    background-size: 60%; /* Makes the image only take up 80% of the box */
+    background-repeat: no-repeat;
+    background-position: center bottom; /* Keeps it centered and at the bottom */
 
-.pic5 {
-  
-  grid-area: box-5;
-}
+    /* This prevents it from sliding under the text */
+  }
+  .downdownup {
+    height: fit-content;
+  }
 
+  .downup {
+    height: fit-content;
+    grid-template-rows: 476px 476px 376px 376px 376px;
+    grid-template-columns: 90%;
+    display: grid;
+    grid-template-areas:
+      "box-1 "
+      "box-1"
+      "box-5"
+      "box-2"
+      "box-4"
+      "box-3" !important;
+    margin-top: 200px !important;
+  }
+  .footer {
+    height: 1500px;
+  }
 
+  .pic1 {
+    grid-area: box-1;
+    object-fit: cover;
+    object-position: top;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-  
+  .pic2 {
+    grid-area: box-2;
+  }
+  .pic4 {
+    grid-area: box-4;
+  }
+
+  .pic3 {
+    grid-area: box-3;
+  }
+
+  .pic5 {
+    grid-area: box-5;
+  }
+  .footer {
+    height: fit-content;
+  }
+
+  .upfooter {
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 30px;
+  }
+
+  .downfooter {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+  }
+  .t7t {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .downdowndown {
+    background-size: cover; /* Scales the image to fill the box without stretching */
+    background-position: center; /* Keeps the people in the middle of the frame */
+    background-repeat: no-repeat;
+  }
 }
