@@ -1,10 +1,10 @@
 .h-title {
   font-size: 3.5em;
-  font-weight: bold;
-  color: #1e1e1e;
+  font-weight: 700;
+  color: var(--color-dark);
   line-height: 1.1;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: var(--spacing-3xl);
   position: relative;
 }
 
@@ -17,11 +17,11 @@
   margin-bottom: 90px;
   padding-bottom: 20px;
 }
-/* 3bd el rzza9 */
+
 .h-carousel::-webkit-scrollbar {
   display: none;
 }
-/* 3nd el rzza9 */
+
 .group {
   display: flex;
   align-items: center;
@@ -31,37 +31,34 @@
   will-change: transform;
   animation: spin 260s linear infinite;
 }
-/* 3bde3l rza9 */
+
 .h-carousel:hover .group {
   animation-play-state: paused;
   cursor: grab;
 }
+
 .h-carousel-item {
   display: flex;
   max-width: 187px;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--spacing-md);
   align-self: flex-start;
 }
 
 @keyframes spin {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
 
 .h-carousel-image {
   width: 187px;
   height: 187px;
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
 }
 
 .h-carousel-text {
   max-width: 100%;
-  color: #1e1e1e;
+  color: var(--color-dark);
 }
 
 .h-carousel-name {
@@ -76,20 +73,19 @@
   font-size: 0.75rem;
   text-align: center;
   line-height: 1.1;
-  color: #1e1e1e;
+  color: var(--color-dark);
   font-weight: 400;
   margin-bottom: 0;
 }
 
 .h-highlight {
   color: var(--color-primary);
-  font: var(--font-title);
+  font-family: var(--font-title);
   display: inline-block;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   vertical-align: bottom;
   min-width: 10px;
-  top: 0;
 }
 
 .h-highlight-text {
@@ -98,14 +94,8 @@
 }
 
 @keyframes slideUp {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 .h-highlight-text.exit {
@@ -113,26 +103,18 @@
 }
 
 @keyframes slideUpExit {
-  from {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-100%); opacity: 0; }
 }
 
 .h-text {
   font-size: 1.25rem;
   line-height: 1.6;
-  color: #1e1e1e;
+  color: var(--color-dark);
   font-weight: 400;
-  margin-bottom: 15px;
   max-width: 720px;
   text-align: center;
-  margin: auto;
-  margin-bottom: 70px;
+  margin: auto auto var(--spacing-4xl);
 }
 
 .h-cta-container {
@@ -144,14 +126,13 @@
   display: inline-block;
   padding: 15px 20px;
   font-size: 16px;
-  color: rgb(30, 30, 30);
+  color: var(--color-dark);
   background-color: var(--color-primary);
   border: none;
-  text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color var(--transition-base);
   margin-bottom: 14px;
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   width: max-content;
 }
 
@@ -162,7 +143,27 @@
 .h-note {
   display: block;
   font-size: 0.75rem;
-  color: #1e1e1e;
+  color: var(--color-dark);
   text-align: center;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .h-title {
+    font-size: 2.2em;
+  }
+
+  .h-carousel-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .h-carousel-item {
+    max-width: 140px;
+  }
+
+  .h-text {
+    font-size: 1rem;
+    padding: 0 var(--spacing-md);
+  }
 }
