@@ -124,37 +124,30 @@ const items = [
     name: "Lindsay Ostrom",
     role: "Creator of food blog Pinch of Yum"
   }
-]
+];
 
 const CarouselItem = (item) => `
-    <div class="h-carousel-item">
-      <img
-        alt=${item.name}
-        data-nimg="1"
-        class="h-carousel-image"
-        src=${item.image}
-      />
-      <div class="h-carousel-text">
-        <p class="h-carousel-name">${item.name}</p>
-        <p class="h-carousel-role">${item.role}</p>
-      </div>
+  <div class="h-carousel-item">
+    <img alt="${item.name}" class="h-carousel-image" src="${item.image}" />
+    <div class="h-carousel-text">
+      <p class="h-carousel-name">${item.name}</p>
+      <p class="h-carousel-role">${item.role}</p>
     </div>
-    `;
+  </div>
+`;
 
 const highlightWords = ['bloggers', 'coaches', 'creators', 'entrepreneurs', 'YouTubers', 'authors', 'writers', 'podcasters'];
 
 document.addEventListener("sectionsLoaded", () => {
-  console.log("DOM fully loaded and parsed - houssem.js");
-  const carousel = document.getElementById("group1");
-  // 3bd el rzz9
+  const carousel1 = document.getElementById("group1");
   const carousel2 = document.getElementById("group2");
-  carousel.innerHTML = items.map(CarouselItem).join("")
-  // 3bd el rzz9
-  carousel2.innerHTML = items.map(CarouselItem).join("")
+
+  const itemsHtml = items.map(CarouselItem).join("");
+  carousel1.innerHTML = itemsHtml;
+  carousel2.innerHTML = itemsHtml;
 
   const highlight = document.getElementById("h-highlight");
 
-  // Create initial word element
   const createWordElement = (word) => {
     const span = document.createElement('span');
     span.className = 'h-highlight-text';
@@ -162,32 +155,19 @@ document.addEventListener("sectionsLoaded", () => {
     return span;
   };
 
-  // Set initial word
-  let currentWordIndex = 0;
-  highlight.appendChild(createWordElement(highlightWords[currentWordIndex]));
+  let currentIndex = 0;
+  highlight.appendChild(createWordElement(highlightWords[currentIndex]));
 
   setInterval(() => {
     const currentElement = highlight.querySelector('.h-highlight-text');
+    const nextIndex = Math.floor(Math.random() * highlightWords.length);
 
-    // Get next word
-    const nextWordIndex = Math.floor(Math.random() * highlightWords.length);
-    currentWordIndex = nextWordIndex;
-
-    // Add exit animation to current word
     currentElement.classList.add('exit');
 
-    // Create new word element
-    const newElement = createWordElement(highlightWords[nextWordIndex]);
-
-    // Add new element after a short delay
-    setTimeout(() => {
-      highlight.appendChild(newElement);
-    }, 100);
-
-    // Remove old element after animation completes
     setTimeout(() => {
       currentElement.remove();
-    }, 100);
+      const newElement = createWordElement(highlightWords[nextIndex]);
+      highlight.appendChild(newElement);
+    }, 250);
   }, 2000);
 });
-
